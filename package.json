@@ -1,0 +1,17 @@
+{
+  "name": "clientinit",
+  "version": "1.0.0",
+  "description": "use to generate client id's for swgoh-client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "scuba75",
+  "license": "ISC",
+  "dependencies": {
+    "logger": "github:c3pobot/logger",
+    "mongoapiclient": "github:c3pobot/mongoapiclient",
+    "node-fetch": "^2.6.12",
+    "uuid": "^9.0.0"
+  }
+}
