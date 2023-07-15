@@ -4,7 +4,10 @@
   "description": "use to generate client id's for swgoh-client",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update": "chmod a+x updategitdependency.sh && ./updategitdependency.sh",
+    "build": "chmod a+x buildtestimage.sh && ./buildtestimage.sh c3pobot/clientinit",
+    "prod": "chmod a+x buildprodimage.sh && ./buildprodimage.sh c3pobot/clientinit"
   },
   "author": "scuba75",
   "license": "ISC",
