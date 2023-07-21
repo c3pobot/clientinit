@@ -14,15 +14,9 @@ const getNewIdentities = require('./getNewIdentities')
 let clientKey
 const GetIp = async()=>{
   try{
-    let publicIp = await getIp()
-    if(publicIp){
-      clientKey = APP_NAME+'-'+publicIp+'-'+PORT+'-'+POD_NAME
-      log.info('using '+clientKey+' to generate '+SWARM_SIZE+' identities...')
-      UpdateIdentities()
-    }else{
-      throw(`Unable to determine public IP address`)
-    }
-
+    clientKey = APP_NAME+'-'+PORT+'-'+POD_NAME
+    log.info('using '+clientKey+' to generate '+SWARM_SIZE+' identities...')
+    UpdateIdentities()
   }catch(e){
     log.error(e)
     setTimeout(GetIp, 5000)
