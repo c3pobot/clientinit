@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "logger": "github:c3pobot/logger",
+    "minio-client": "github:c3pobot/minio-client",
     "mongoapiclient": "github:c3pobot/mongoapiclient",
     "node-fetch": "^2.6.12",
     "uuid": "^9.0.0"
