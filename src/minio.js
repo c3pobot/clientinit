@@ -8,6 +8,7 @@ module.exports.get = async(podName)=>{
     let identities = await minio.getJSON(MINIO_BUCKET, podName, 'identities')
     if(identities){
       log.info(`Found ${identities?.length} in minio storage`)
+      return identities
     }
   }catch(e){
     log.error(e)
