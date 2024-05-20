@@ -5,17 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "update": "chmod a+x updategitdependency.sh && ./updategitdependency.sh",
     "build": "chmod a+x buildtestimage.sh && ./buildtestimage.sh c3pobot/clientinit",
     "prod": "chmod a+x buildprodimage.sh && ./buildprodimage.sh c3pobot/clientinit"
   },
   "author": "scuba75",
   "license": "ISC",
   "dependencies": {
-    "logger": "github:c3pobot/logger",
-    "minio-client": "github:c3pobot/minio-client",
-    "mongoapiclient": "github:c3pobot/mongoapiclient",
-    "node-fetch": "^2.6.12",
-    "uuid": "^9.0.0"
+    "chalk": "^4.1.0"
   }
 }

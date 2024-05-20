@@ -4,6 +4,7 @@ COPY package*.json ./
 RUN npm install --omit=dev
 
 FROM node:20-alpine AS app
+LABEL org.opencontainers.image.source https://github.com/c3pobot/clientinit
 RUN mkdir -p /app/data && chown -R node:node /app/data
 WORKDIR /app
 ENV NODE_PATH=/app/src
